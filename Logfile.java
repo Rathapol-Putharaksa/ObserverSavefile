@@ -23,8 +23,8 @@ public class Logfile extends Observer {
         }
     }
 
-    public void update(String detail) {
-        logger.info(detail);
+    public void update(Object detail) {
+        logger.info((String) detail);
     }
 
 }
