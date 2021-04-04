@@ -10,8 +10,6 @@ public class Logfile extends Observer{
      
      public Logfile(String filename){
         try {
-        
-         
          this.filename = filename;
          fh = new FileHandler("./"+this.filename+".log");
         logger = Logger.getLogger(filename);
