@@ -74,7 +74,7 @@ public class GoogleAPI extends Observer {
 
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-        final String spreadsheetId = "1DxtOiUtrHAg91Ui-A4xYYjMNkj8TMjLKcVKenF2yKIU";
+        final String spreadsheetId = "YOUR_SHEETS_ID";
         final String range = "CustomerSheets!A2:F";
 
         Sheets service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
@@ -87,7 +87,7 @@ public class GoogleAPI extends Observer {
     }
 
     public void update(Object data) {
-        String spreadsheetId = "1DxtOiUtrHAg91Ui-A4xYYjMNkj8TMjLKcVKenF2yKIU";
+        String spreadsheetId = "YOUR_SHEETS_ID";
         String range = "CustomerSheets!A1:F";
 
         List<List<Object>> vaules = new ArrayList<>();
